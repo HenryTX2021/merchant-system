@@ -1,0 +1,107 @@
+.frozen-container {
+  padding: 16px;
+}
+
+.frozen-header {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.frozen-header h2 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+  flex: 1;
+  text-align: center;
+}
+
+.back-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  cursor: pointer;
+}
+
+.frozen-description {
+  background-color: #f5f7fa;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.frozen-description p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.frozen-list {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.frozen-record {
+  padding: 8px 0;
+}
+
+.frozen-record-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.frozen-record-amount {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff8f1f;
+}
+
+.frozen-record-info {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.empty-records {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: #999;
+}
+
+/* 冻结金额详情样式 */
+.frozen-detail {
+  padding: 8px 0;
+}
+
+.detail-item {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.detail-value {
+  font-size: 16px;
+  color: #333;
+}
+
+.detail-value.frozen {
+  color: #ff8f1f;
+  font-weight: 500;
+}

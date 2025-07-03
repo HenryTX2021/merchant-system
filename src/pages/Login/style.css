@@ -1,0 +1,44 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 24px 16px;
+  background-color: #fff;
+}
+
+.login-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.login-logo {
+  margin-bottom: 20px;
+}
+
+.login-logo img {
+  width: 200px;
+  height: auto;
+}
+
+.login-header h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.login-header p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+.login-footer {
+  margin-top: 24px;
+  text-align: center;
+  color: #999;
+}
+
+.login-footer a {
+  color: #1677ff;
+  text-decoration: none;
+}

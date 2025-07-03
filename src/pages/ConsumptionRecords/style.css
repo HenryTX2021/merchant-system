@@ -1,0 +1,229 @@
+.records-container {
+  padding: 16px;
+}
+
+.records-header {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  cursor: pointer;
+}
+
+.filter-icon:active {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+}
+
+.filter-form {
+  padding: 0 16px 16px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  gap: 12px;
+}
+
+.filter-buttons .adm-button {
+  flex: 1;
+}
+
+.filter-panel .adm-collapse-panel-content {
+  padding: 0;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.adm-collapse-panel-header {
+  cursor: pointer;
+  padding: 12px 16px;
+  background-color: #f5f5f5;
+  border-radius: 8px 8px 0 0;
+}
+
+.placeholder {
+  width: 40px;
+}
+
+.export-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background-color: #1677ff;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.export-button:active {
+  opacity: 0.8;
+}
+
+.filter-summary {
+  padding: 0 16px;
+  margin-bottom: 8px;
+}
+
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.filter-tag {
+  display: inline-flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 4px 8px;
+  border-radius: 16px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.filter-tag .antd-mobile-icon {
+  margin-left: 4px;
+  color: #999;
+}
+
+.empty-records {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 16px;
+}
+
+.records-header h2 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+  flex: 1;
+  text-align: center;
+}
+
+.back-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.back-icon i {
+  font-size: 20px;
+}
+
+.placeholder {
+  width: 40px;
+}
+
+.records-list {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.finance-record {
+  width: 100%;
+}
+
+.finance-record-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.finance-record-amount {
+  font-size: 18px;
+  font-weight: 500;
+  color: #00b578;
+}
+
+.finance-record-amount.consumption {
+  color: #ff3141;
+}
+
+.finance-record-info {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.status-tag {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.status-completed {
+  background-color: rgba(0, 181, 120, 0.1);
+  color: #00b578;
+}
+
+.status-pending {
+  background-color: rgba(255, 143, 31, 0.1);
+  color: #ff8f1f;
+}
+
+.status-failed {
+  background-color: rgba(255, 49, 65, 0.1);
+  color: #ff3141;
+}
+
+/* 充值记录详情样式 */
+.recharge-detail {
+  padding: 8px 0;
+}
+
+.detail-item {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.detail-value {
+  font-size: 16px;
+  color: #333;
+}
+
+.detail-value.consumption {
+  color: #ff3141;
+}

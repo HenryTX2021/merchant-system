@@ -1,0 +1,239 @@
+.finance-container {
+  padding: 16px;
+}
+
+.finance-header {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.finance-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  color: #000;
+  flex: 1;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.back-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.back-icon i {
+  font-size: 20px;
+}
+
+.placeholder {
+  width: 40px;
+}
+
+.balance-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.balance-info {
+  padding: 16px;
+}
+
+.balance-title {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.balance-amount {
+  font-size: 32px;
+  font-weight: 500;
+  color: #1677ff;
+  margin-bottom: 16px;
+}
+
+.balance-details {
+  margin-bottom: 16px;
+}
+
+.balance-detail-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.record-section {
+  margin-bottom: 16px;
+}
+
+.record-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.record-title {
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 8px;
+  border-left: 3px solid #1677ff;
+}
+
+.view-all {
+  font-size: 14px;
+  color: #1677ff;
+  cursor: pointer;
+}
+
+.finance-list {
+  background-color: transparent;
+}
+
+.finance-record {
+  width: 100%;
+}
+
+.finance-record-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.finance-record-amount {
+  font-size: 18px;
+  font-weight: 500;
+  color: #00b578;
+}
+
+.finance-record-amount.consumption {
+  color: #ff3141;
+}
+
+.finance-record-info {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.status-tag {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.status-completed {
+  background-color: rgba(0, 181, 120, 0.1);
+  color: #00b578;
+}
+
+.status-pending {
+  background-color: rgba(255, 143, 31, 0.1);
+  color: #ff8f1f;
+}
+
+.status-failed {
+  background-color: rgba(255, 49, 65, 0.1);
+  color: #ff3141;
+}
+
+.recharge-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recharge-info {
+  padding: 16px;
+}
+
+.recharge-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.recharge-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.upload-button {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  color: #999;
+}
+
+.upload-button span {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* 充值记录详情样式 */
+.recharge-detail {
+  padding: 8px 0;
+}
+
+.detail-item {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.detail-value {
+  font-size: 16px;
+  color: #333;
+}
+
+.detail-value img {
+  border-radius: 4px;
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+
+.clickable-amount {
+  color: #ff8f1f;
+  cursor: pointer;
+  position: relative;
+  padding-right: 20px;
+}
+
+.clickable-amount:hover {
+  text-decoration: underline;
+}
+
+.clickable-amount:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}

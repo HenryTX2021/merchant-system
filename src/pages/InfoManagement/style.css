@@ -1,0 +1,357 @@
+.info-container {
+  padding: 16px;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+.info-header {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  color: #000;
+  flex: 1;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.back-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.back-icon i {
+  font-size: 20px;
+}
+
+.placeholder {
+  width: 40px;
+}
+
+.upload-button {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  color: #999;
+}
+
+.upload-button span {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.section-header h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.section-tip {
+  margin-top: 16px;
+  padding: 8px 16px;
+  background-color: #f0f9ff;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.section-tip p {
+  margin: 0;
+}
+
+.contact-list,
+.financial-list {
+  background-color: transparent;
+  margin-bottom: 16px;
+}
+
+.contact-card,
+.financial-card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.contact-info,
+.financial-info {
+  padding: 12px;
+}
+
+.contact-name,
+.financial-type {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.contact-role {
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: rgba(22, 119, 255, 0.1);
+  color: #1677ff;
+}
+
+.contact-details,
+.financial-details {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.contact-details div,
+.financial-details div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.empty-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px;
+  text-align: center;
+}
+
+/* 账户设置样式 */
+.account-list,
+.notification-list,
+.security-list {
+  background-color: transparent;
+  margin-bottom: 16px;
+}
+
+.login-info {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background-color: #f5f7fa;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.login-info p {
+  margin: 4px 0;
+}
+
+.security-status {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.security-status.active {
+  background-color: rgba(82, 196, 26, 0.1);
+  color: #52c41a;
+}
+
+.security-status.inactive {
+  background-color: rgba(245, 34, 45, 0.1);
+  color: #f5222d;
+}
+
+/* 店铺授权样式 */
+.shop-auth-container {
+  padding: 16px;
+}
+
+.shop-list {
+  background-color: transparent;
+  margin-bottom: 16px;
+}
+
+.shop-item {
+  width: 100%;
+}
+
+.shop-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.shop-name {
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+}
+
+.shop-code {
+  font-size: 12px;
+  color: #999;
+}
+
+.shop-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  font-size: 14px;
+}
+
+.shop-detail-item {
+  display: flex;
+  align-items: center;
+}
+
+.shop-detail-item .label {
+  color: #666;
+  margin-right: 4px;
+}
+
+.shop-detail-item .value {
+  color: #333;
+}
+
+.shop-detail-item .status {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.shop-detail-item .status.active {
+  background-color: rgba(82, 196, 26, 0.1);
+  color: #52c41a;
+}
+
+.shop-detail-item .status.inactive {
+  background-color: rgba(245, 34, 45, 0.1);
+  color: #f5222d;
+}
+
+.auth-dialog-content {
+  padding: 16px 0;
+}
+
+.auth-dialog-content p {
+  margin-bottom: 16px;
+}
+
+.auth-instructions {
+  margin-top: 24px;
+  padding: 16px;
+  background-color: #f5f7fa;
+  border-radius: 8px;
+  border-left: 4px solid #1677ff;
+}
+
+.auth-instructions h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #333;
+}
+
+.auth-instructions ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.auth-instructions li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.auth-instructions li:last-child {
+  margin-bottom: 0;
+}
+
+.auth-instructions strong {
+  color: #333;
+}
+
+/* 仓库信息样式 */
+.address-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.address-group .adm-form-item {
+  flex: 1;
+  min-width: 120px;
+}
+
+/* 开票信息样式 */
+.section-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 16px 0 12px 0;
+  padding-left: 8px;
+  border-left: 3px solid #1677ff;
+}
+
+/* 折叠面板样式 */
+.adm-collapse {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.adm-collapse-panel {
+  margin-bottom: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.adm-collapse-panel-header {
+  font-weight: 500;
+}
+
+.adm-collapse-panel-content {
+  padding: 16px;
+}
+
+/* 滑动操作样式 */
+.adm-swipe-action-actions {
+  height: 100%;
+}
+
+/* 表单样式 */
+.adm-form-item-label {
+  font-weight: 500;
+  color: #333;
+}
+
+/* 空状态样式 */
+.adm-empty {
+  padding: 32px 0;
+}

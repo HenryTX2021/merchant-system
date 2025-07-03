@@ -1,0 +1,297 @@
+.price-query-container {
+  padding: 16px;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+.price-query-header {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-query-header h2 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+  flex: 1;
+  text-align: center;
+}
+
+.back-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.back-icon i {
+  font-size: 20px;
+}
+
+.placeholder {
+  width: 40px;
+}
+
+/* 报价说明样式 */
+.price-description {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 16px;
+}
+
+.price-section {
+  margin-bottom: 24px;
+}
+
+.price-section h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.price-section p {
+  margin: 8px 0;
+  line-height: 1.5;
+  color: #666;
+}
+
+.price-section ol, .price-section ul {
+  padding-left: 20px;
+  margin: 8px 0;
+}
+
+.price-section li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.price-note {
+  background-color: #f9f9f9;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 16px;
+}
+
+.price-note p {
+  margin: 6px 0;
+}
+
+.price-note strong {
+  color: #ff8f1f;
+}
+
+.price-query-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.price-result {
+  margin-top: 24px;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 16px;
+}
+
+.price-result-header {
+  margin-bottom: 16px;
+}
+
+.price-result-header h3 {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+}
+
+.price-result-content {
+  background-color: #f5f7fa;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.price-result-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.price-result-item:last-child {
+  margin-bottom: 0;
+}
+
+.price-result-divider {
+  height: 1px;
+  background-color: #e8e8e8;
+  margin: 12px 0;
+}
+
+.price-highlight {
+  color: #1677ff;
+  font-weight: 500;
+}
+
+.price-total {
+  color: #ff8f1f;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.price-calculation {
+  font-size: 12px;
+  color: #999;
+  margin-left: 4px;
+}
+
+.price-result-note {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #999;
+}
+
+.price-result-note p {
+  margin: 0;
+}
+
+.price-list-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.price-list-header {
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.price-list-header h3 {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+}
+
+.price-list {
+  background-color: transparent;
+}
+
+.price-list-header-item {
+  background-color: #f5f7fa;
+  font-weight: 500;
+}
+
+.price-list-row {
+  display: flex;
+  width: 100%;
+}
+
+.price-list-cell {
+  flex: 1;
+  text-align: center;
+}
+
+.price-table-container {
+  padding: 0 16px;
+  overflow-x: auto;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.price-table th,
+.price-table td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.price-table th {
+  background-color: #f5f7fa;
+  font-weight: 500;
+}
+
+.price-table tr:last-child td {
+  border-bottom: none;
+}
+
+.price-table-note {
+  padding: 12px 16px;
+  font-size: 12px;
+  color: #999;
+}
+
+.price-table-note p {
+  margin: 0 0 4px 0;
+}
+
+.price-table-note p:last-child {
+  margin-bottom: 0;
+}
+
+/* 禁运品列表样式 */
+.prohibited-items {
+  margin-top: 16px;
+}
+
+.prohibited-category {
+  margin-bottom: 20px;
+  border-left: 3px solid #ff4d4f;
+  padding-left: 12px;
+}
+
+.prohibited-category h4 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.prohibited-category ol {
+  padding-left: 20px;
+}
+
+.prohibited-category li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.prohibited-more {
+  text-align: center;
+  margin-top: 16px;
+  color: #1677ff;
+  cursor: pointer;
+}
+
+.price-disclaimer {
+  margin-top: 24px;
+  padding: 12px;
+  background-color: #fff7e6;
+  border-radius: 6px;
+  border-left: 3px solid #ff8f1f;
+}
+
+.price-disclaimer p {
+  margin: 0;
+  color: #d46b08;
+  font-weight: 500;
+}
+
+.empty-content {
+  padding: 40px 0;
+  text-align: center;
+  color: #999;
+}

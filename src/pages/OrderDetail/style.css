@@ -1,0 +1,153 @@
+.order-detail-container {
+  padding-bottom: 80px;
+}
+
+.loading-container,
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  color: #999;
+  font-size: 16px;
+}
+
+.order-status-card,
+.order-info-card,
+.order-shipping-card,
+.order-items-card,
+.order-history-card {
+  margin: 12px 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.order-status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.order-id {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.order-status-steps {
+  margin-top: 20px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.order-info-list,
+.order-shipping-list,
+.order-items-list {
+  --border-inner: 0;
+  --border-top: 0;
+  --border-bottom: 0;
+  background-color: transparent;
+}
+
+.order-items-list .adm-list-item-content-main {
+  flex: 1;
+}
+
+.item-image-container {
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: 12px;
+  border: 1px solid #eee;
+}
+
+.item-image-container:hover {
+  border-color: #1677ff;
+  box-shadow: 0 0 8px rgba(22, 119, 255, 0.2);
+}
+
+/* 确保地址能够正确换行显示 */
+.order-shipping-list .adm-list-item-content-extra {
+  max-width: 70%;
+  text-align: right;
+}
+
+.order-shipping-list .adm-list-item-content-extra div {
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
+.order-history-timeline {
+  padding: 8px 0;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #1677ff;
+}
+
+.timeline-item:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 16px;
+  width: 2px;
+  height: calc(100% - 16px);
+  background-color: #e5e5e5;
+}
+
+.timeline-content {
+  padding-left: 10px;
+}
+
+.timeline-title {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.timeline-time {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+.timeline-operator {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.timeline-remark {
+  font-size: 14px;
+  color: #666;
+}
+
+.order-detail-actions {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 16px;
+  background-color: #fff;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+  z-index: 100;
+}
