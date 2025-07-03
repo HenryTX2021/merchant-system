@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/merchant-system/static/css/main.b0352079.css",
+    "main.js": "/merchant-system/static/js/main.7002c97b.js",
+    "index.html": "/merchant-system/index.html",
+    "main.b0352079.css.map": "/merchant-system/static/css/main.b0352079.css.map",
+    "main.7002c97b.js.map": "/merchant-system/static/js/main.7002c97b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0352079.css",
+    "static/js/main.7002c97b.js"
+  ]
+}
