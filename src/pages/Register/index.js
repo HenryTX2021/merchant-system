@@ -24,7 +24,7 @@ const Register = ({ history }) => {
     <div className="register-container">
       <div className="register-header">
         <div className="register-logo">
-          <img src="/arllogo.svg" alt="ARL Logo" />
+          <img src="/ARLlogo.svg" alt="ARL Logo" />
         </div>
         <h2>ARL商家系统</h2>
         <p>创建您的账户</p>

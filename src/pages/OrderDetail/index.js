@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
-import { NavBar, Card, List, Tag, Steps, Button, Toast, Image, ImageViewer } from 'antd-mobile';
+import { Card, List, Tag, Steps, Button, Toast, Image, ImageViewer } from 'antd-mobile';
 import { LocationOutline } from 'antd-mobile-icons';
 import { ORDER_STATUS, getOrderStatusInfo, getOrderStatusSteps } from '../../utils/orderStatus';
 import { calculateRemainingSlA, formatRemainingSlA } from '../../utils/slaUtils';
@@ -129,10 +129,63 @@ const OrderDetail = () => {
     );
   };
 
+  // 返回上一页
+  const goBack = () => {
+    history.goBack();
+  };
+
+  /* 页面标题样式 */
+  const customStyles = `
+    .order-detail-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      position: relative;
+    }
+    
+    .order-detail-header h2 {
+      flex: 1;
+      text-align: center;
+      margin: 0;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    
+    .back-icon {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: background-color 0.3s;
+    }
+    
+    .back-icon:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    
+    .placeholder {
+      width: 32px;
+    }
+  `;
+
   if (loading) {
     return (
       <div className="order-detail-container">
-        <NavBar back="返回" onBack={() => history.goBack()}>订单详情</NavBar>
+        <style>{customStyles}</style>
+        <div className="order-detail-header page-header">
+          <div className="back-icon" onClick={goBack}>
+            <svg width="20" height="20" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M27.4166 14.6673L17.4166 22.0007L27.4166 29.334" stroke="currentColor" strokeWidth="3.66667" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </div>
+          <h2>订单详情</h2>
+          <div className="placeholder"></div>
+        </div>
         <div className="loading-container">加载中...</div>
       </div>
     );
@@ -141,7 +194,16 @@ const OrderDetail = () => {
   if (!orderData) {
     return (
       <div className="order-detail-container">
-        <NavBar back="返回" onBack={() => history.goBack()}>订单详情</NavBar>
+        <style>{customStyles}</style>
+        <div className="order-detail-header page-header">
+          <div className="back-icon" onClick={goBack}>
+            <svg width="20" height="20" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M27.4166 14.6673L17.4166 22.0007L27.4166 29.334" stroke="currentColor" strokeWidth="3.66667" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </div>
+          <h2>订单详情</h2>
+          <div className="placeholder"></div>
+        </div>
         <div className="error-container">订单不存在或已被删除</div>
       </div>
     );
@@ -154,7 +216,16 @@ const OrderDetail = () => {
 
   return (
     <div className="order-detail-container">
-      <NavBar back="返回" onBack={() => history.goBack()}>订单详情</NavBar>
+      <style>{customStyles}</style>
+      <div className="order-detail-header page-header">
+        <div className="back-icon" onClick={goBack}>
+          <svg width="20" height="20" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.4166 14.6673L17.4166 22.0007L27.4166 29.334" stroke="currentColor" strokeWidth="3.66667" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+        <h2>订单详情</h2>
+        <div className="placeholder"></div>
+      </div>
       
       {/* ARL运单状态卡片 */}
       <Card className="order-status-card">

@@ -31,7 +31,7 @@ const Login = ({ history }) => {
     <div className="login-container">
       <div className="login-header">
         <div className="login-logo">
-          <img src="/arllogo.svg" alt="ARL Logo" />
+          <img src="/ARLlogo.svg" alt="ARL Logo" />
         </div>
         <h2>ARL商家系统</h2>
         <p>登录您的账户</p>

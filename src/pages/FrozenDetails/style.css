@@ -2,30 +2,7 @@
   padding: 16px;
 }
 
-.frozen-header {
-  margin-bottom: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.frozen-header h2 {
-  font-size: 20px;
-  margin: 0;
-  color: #333;
-  flex: 1;
-  text-align: center;
-}
-
-.back-icon {
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #333;
-  cursor: pointer;
-}
+/* Frozen details header styles removed - using unified page-header from common.css */
 
 .frozen-description {
   background-color: #f5f7fa;

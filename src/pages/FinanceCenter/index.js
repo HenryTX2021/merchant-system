@@ -1,10 +1,12 @@
 import React, { useState, useRef } from 'react';
+import { useHistory } from 'react-router-dom';
 import { Tabs, Card, List, Button, Dialog, Form, Input, TextArea, ImageUploader, Toast, Selector, Image, ImageViewer } from 'antd-mobile';
 import { RightOutline, PictureOutline } from 'antd-mobile-icons';
 import './style.css';
 import '../../styles/common.css';
 
 const FinanceCenter = () => {
+  const history = useHistory();
   const [activeTab, setActiveTab] = useState('balance');
   const [rechargeModalVisible, setRechargeModalVisible] = useState(false);
   const [rechargeDetailVisible, setRechargeDetailVisible] = useState(false);
@@ -165,7 +167,7 @@ const FinanceCenter = () => {
                   <span>冻结金额:</span>
                   <span 
                     className="clickable-amount"
-                    onClick={() => window.location.href = '/merchant/frozen-details'}
+                    onClick={() => history.push('/merchant/frozen-details')}
                   >
                     {accountBalance.frozen.toFixed(2)}
                   </span>
@@ -184,7 +186,7 @@ const FinanceCenter = () => {
           <div className="record-section">
             <div className="record-header">
               <div className="record-title">充值记录</div>
-              <div className="view-all" onClick={() => window.location.href = '/merchant/recharge-records'}>全部</div>
+              <div className="view-all" onClick={() => history.push('/merchant/recharge-records')}>全部</div>
             </div>
             <List className="finance-list">
               {rechargeRecords.slice(0, 5).map((record) => (
@@ -215,7 +217,7 @@ const FinanceCenter = () => {
           <div className="record-section">
             <div className="record-header">
               <div className="record-title">消费明细</div>
-              <div className="view-all" onClick={() => window.location.href = '/merchant/consumption-records'}>全部</div>
+              <div className="view-all" onClick={() => history.push('/merchant/consumption-records')}>全部</div>
             </div>
             <List className="finance-list">
               {consumptionRecords.slice(0, 5).map((record) => (

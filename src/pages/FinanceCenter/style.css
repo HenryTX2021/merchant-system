@@ -2,40 +2,7 @@
   padding: 16px;
 }
 
-.finance-header {
-  margin-bottom: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.finance-header h2 {
-  font-size: 22px;
-  font-weight: 600;
-  margin: 0;
-  color: #000;
-  flex: 1;
-  text-align: center;
-  letter-spacing: 0.5px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-.back-icon {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.back-icon i {
-  font-size: 20px;
-}
-
-.placeholder {
-  width: 40px;
-}
+/* Finance center header styles removed - using unified page-header from common.css */
 
 .balance-card {
   margin-bottom: 16px;

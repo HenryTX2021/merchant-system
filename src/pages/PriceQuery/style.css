@@ -4,37 +4,7 @@
   min-height: 100vh;
 }
 
-.price-query-header {
-  margin-bottom: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.price-query-header h2 {
-  font-size: 20px;
-  margin: 0;
-  color: #333;
-  flex: 1;
-  text-align: center;
-}
-
-.back-icon {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.back-icon i {
-  font-size: 20px;
-}
-
-.placeholder {
-  width: 40px;
-}
+/* Price query header styles removed - using unified page-header from common.css */
 
 /* 报价说明样式 */
 .price-description {

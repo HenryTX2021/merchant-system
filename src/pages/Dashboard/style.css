@@ -2,71 +2,7 @@
   padding: 16px;
 }
 
-.dashboard-header {
-  padding: 20px 16px 24px;
-  background: linear-gradient(135deg, #1677ff, #0e5ecc);
-  color: white;
-  border-radius: 0 0 20px 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.dashboard-header::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  right: -10px;
-  width: 100px;
-  height: 100px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.header-content {
-  flex: 1;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-.dashboard-header h2 {
-  margin: 0;
-  font-size: 22px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  color: white;
-}
-
-.dashboard-header p {
-  margin: 6px 0 0;
-  font-size: 14px;
-  opacity: 0.9;
-  font-weight: 300;
-  color: white;
-}
-
-.back-icon {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.back-icon i {
-  font-size: 20px;
-}
-
-.placeholder {
-  width: 40px;
-}
+/* Dashboard header styles removed - using unified page-header from common.css */
 
 .dashboard-menu-card {
   margin-bottom: 16px;

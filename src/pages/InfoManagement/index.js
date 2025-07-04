@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { Tabs, Form, Input, Button, ImageUploader, Toast, List, Avatar, Dialog, Card, SwipeAction, Collapse, Space, Empty, Switch, Radio, TextArea, Selector } from 'antd-mobile';
-import { PictureOutline, RightOutline, UserOutline, ShopbagOutline, EnvironmentOutline, PhoneFill, MailOutline, LockOutline, AddOutline, DeleteOutline, EditOutline, PayCircleOutline, SetOutline, BellOutline, ExclamationCircleOutline } from 'antd-mobile-icons';
+import { PictureOutline, RightOutline, UserOutline, ShopbagOutline, EnvironmentOutline, PhoneFill, MailOutline, LockOutline, AddOutline, DeleteOutline, EditOutline, PayCircleOutline, SetOutline, BellOutline, ExclamationCircleOutline, CloseOutline } from 'antd-mobile-icons';
 import './style.css';
 import '../../styles/common.css';
 
 const InfoManagement = () => {
+  const history = useHistory();
   const [activeTab, setActiveTab] = useState('company');
   const [businessLicenseFiles, setBusinessLicenseFiles] = useState([]);
   const [idCardFiles, setIdCardFiles] = useState([]);
@@ -646,6 +648,27 @@ const InfoManagement = () => {
     Toast.show({
       icon: 'success',
       content: '设置已更新',
+    });
+  };
+
+  // 退出登录
+  const handleLogout = () => {
+    Dialog.confirm({
+      title: '确认退出',
+      content: '确定要退出登录吗？',
+      onConfirm: () => {
+        // 清除本地存储的登录信息
+        localStorage.removeItem('merchantToken');
+        localStorage.removeItem('merchantInfo');
+        
+        Toast.show({
+          icon: 'success',
+          content: '已退出登录',
+        });
+        
+        // 跳转到登录页面
+        history.push('/login');
+      },
     });
   };
 
@@ -1337,6 +1360,16 @@ const InfoManagement = () => {
                 >
                   修改密码
                 </List.Item>
+                <List.Item 
+                   clickable
+                   onClick={handleLogout}
+                   arrow={<RightOutline />}
+                 >
+                   <Space>
+                     <CloseOutline />
+                     <span style={{ color: '#ff4d4f' }}>退出登录</span>
+                   </Space>
+                 </List.Item>
               </List>
               
               <div className="login-info">
