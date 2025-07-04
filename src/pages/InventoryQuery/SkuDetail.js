@@ -79,6 +79,12 @@ const SkuDetail = () => {
     return '#ff4d4f';
   };
 
+  // 处理Item点击查看变动记录
+  const handleItemClick = (item) => {
+    // 跳转到Item变动记录页面
+    history.push(`/merchant/inventory-query/item-history/${encodeURIComponent(item.itemId)}?shopSku=${encodeURIComponent(shopSku)}&sellerSku=${encodeURIComponent(sellerSku || '')}&warehouse=${encodeURIComponent(warehouse || '')}`);
+  };
+
   if (!skuInfo) {
     return <div className="loading">加载中...</div>;
   }
@@ -154,7 +160,11 @@ const SkuDetail = () => {
         <div className="card-title">Item明细 ({itemDetails.length})</div>
         <List className="item-details-list">
           {itemDetails.map((item, index) => (
-            <List.Item key={item.itemId} className="item-detail-item">
+            <List.Item 
+              key={item.itemId} 
+              className="item-detail-item clickable"
+              onClick={() => handleItemClick(item)}
+            >
               <div className="item-detail-content">
                 <div className="item-header">
                   <div className="item-id">{item.itemId}</div>

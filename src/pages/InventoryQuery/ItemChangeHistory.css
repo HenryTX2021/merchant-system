@@ -1,0 +1,344 @@
+/* Item变动记录页面样式 */
+.item-change-history {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding-bottom: 20px;
+}
+
+/* 头部样式 */
+.history-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  color: white !important;
+  margin-right: 12px;
+  padding: 4px;
+  min-width: auto;
+}
+
+.history-title {
+  font-size: 18px;
+  font-weight: 600;
+  flex: 1;
+}
+
+/* Item基本信息卡片 */
+.item-info-card {
+  margin: 16px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.item-info-content {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+}
+
+.product-image-container {
+  flex-shrink: 0;
+}
+
+.product-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #f0f0f0;
+}
+
+.item-info-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.item-basic-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.info-label {
+  color: #8c8c8c;
+  min-width: 70px;
+  flex-shrink: 0;
+}
+
+.info-value {
+  color: #262626;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.info-value.item-id {
+  font-family: 'Courier New', monospace;
+  background: #f6f6f6;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.info-value.days {
+  color: #fa8c16;
+  font-weight: 600;
+}
+
+/* 变动历史卡片 */
+.change-history-card {
+  margin: 0 16px 16px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+.title-icon {
+  color: #1890ff;
+  font-size: 18px;
+}
+
+/* 变动记录列表 */
+.change-history-list {
+  background: white;
+}
+
+.change-record-item {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 0;
+}
+
+.change-record-item:last-child {
+  border-bottom: none;
+}
+
+.change-record-content {
+  padding: 16px;
+  width: 100%;
+}
+
+/* 变动记录头部 */
+.change-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.change-time {
+  font-size: 14px;
+  color: #8c8c8c;
+  font-weight: 500;
+}
+
+.change-type-tag {
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+/* 变动详情 */
+.change-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.change-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.change-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.change-info.full-width {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.change-label {
+  color: #8c8c8c;
+  min-width: 60px;
+  flex-shrink: 0;
+}
+
+.change-reason {
+  color: #262626;
+  font-weight: 500;
+}
+
+.operator {
+  color: #262626;
+  font-weight: 500;
+}
+
+.remark {
+  color: #595959;
+  font-style: italic;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+/* 数量变动样式 */
+.quantity-increase {
+  color: #52c41a;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.quantity-decrease {
+  color: #ff4d4f;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.quantity-neutral {
+  color: #8c8c8c;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* 库存变化显示 */
+.stock-change {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.stock-before {
+  color: #8c8c8c;
+  background: #f6f6f6;
+  padding: 2px 6px;
+  border-radius: 4px;
+  min-width: 24px;
+  text-align: center;
+}
+
+.arrow {
+  color: #bfbfbf;
+  font-size: 12px;
+}
+
+.stock-after {
+  color: #262626;
+  background: #e6f7ff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  min-width: 24px;
+  text-align: center;
+  border: 1px solid #91d5ff;
+}
+
+/* 关联单号点击样式 */
+.related-order.clickable {
+  color: #1890ff;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.related-order.clickable:hover {
+  color: #40a9ff;
+}
+
+.related-order.clickable:active {
+  color: #096dd9;
+}
+
+/* 加载状态 */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: #8c8c8c;
+  font-size: 16px;
+}
+
+/* 响应式设计 */
+@media (max-width: 480px) {
+  .item-info-content {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .product-image-container {
+    align-self: center;
+  }
+  
+  .change-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .stock-change {
+    align-self: flex-end;
+  }
+  
+  .change-info.full-width {
+    width: 100%;
+  }
+}
+
+/* 状态标签样式增强 */
+.adm-tag {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* 动画效果 */
+.change-record-item {
+  transition: background-color 0.2s;
+}
+
+.change-record-item:active {
+  background-color: #f8f9fa;
+}

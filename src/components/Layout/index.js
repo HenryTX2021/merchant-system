@@ -16,6 +16,7 @@ import OrderCenter from '../../pages/OrderCenter';
 import OrderDetail from '../../pages/OrderDetail';
 import InventoryQuery from '../../pages/InventoryQuery';
 import SkuDetail from '../../pages/InventoryQuery/SkuDetail';
+import ItemChangeHistory from '../../pages/InventoryQuery/ItemChangeHistory';
 import FinanceCenter from '../../pages/FinanceCenter';
 import RechargeRecords from '../../pages/RechargeRecords';
 import ConsumptionRecords from '../../pages/ConsumptionRecords';
@@ -73,6 +74,7 @@ const Layout = () => {
           <Route path="/merchant/order/:orderId" component={OrderDetail} />
           <Route exact path="/merchant/inventory" component={InventoryQuery} />
           <Route path="/merchant/inventory-query/sku-detail/:shopSku" component={SkuDetail} />
+          <Route path="/merchant/inventory-query/item-history/:itemId" component={ItemChangeHistory} />
           <Route exact path="/merchant/finance" component={FinanceCenter} />
           <Route path="/merchant/recharge-records" component={RechargeRecords} />
           <Route path="/merchant/consumption-records" component={ConsumptionRecords} />

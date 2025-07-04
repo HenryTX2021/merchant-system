@@ -178,6 +178,18 @@
   border-bottom: none;
 }
 
+.item-detail-item.clickable {
+  cursor: pointer;
+}
+
+.item-detail-item.clickable:hover {
+  background-color: #f8f9fa;
+}
+
+.item-detail-item.clickable:active {
+  background-color: #e9ecef;
+}
+
 .item-detail-content {
   width: 100%;
 }
