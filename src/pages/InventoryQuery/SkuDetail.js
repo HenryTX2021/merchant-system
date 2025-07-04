@@ -1,22 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import { List, Tag, Button } from 'antd-mobile';
 import { LeftOutline } from 'antd-mobile-icons';
-import { useHistory, useParams } from 'react-router-dom';
+import { useHistory, useParams, useLocation } from 'react-router-dom';
 import './SkuDetail.css';
 
 const SkuDetail = () => {
   const history = useHistory();
-  const { skuId } = useParams();
+  const { shopSku } = useParams();
+  const location = useLocation();
   const [skuInfo, setSkuInfo] = useState(null);
   const [itemDetails, setItemDetails] = useState([]);
+  
+  // 解析URL查询参数
+  const searchParams = new URLSearchParams(location.search);
+  const sellerSku = searchParams.get('sellerSku');
+  const warehouse = searchParams.get('warehouse');
 
   // 模拟SKU基本信息
   const mockSkuInfo = {
-    shopSku: skuId,
+    shopSku: shopSku,
+    sellerSku: sellerSku || 'UNKNOWN-SKU',
     productName: '益加益合 佳能手动飞机杯 for Men To Musturbate',
     productImage: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=300&fit=crop',
     brand: 'No Brand',
-    warehouseName: '盖加拉合',
+    warehouseName: warehouse || '未知仓库',
     totalStock: 3,
     availableStock: 2,
     frozenStock: 1,
@@ -52,7 +59,7 @@ const SkuDetail = () => {
     // 模拟数据加载
     setSkuInfo(mockSkuInfo);
     setItemDetails(mockItemDetails);
-  }, [skuId]);
+  }, [shopSku, sellerSku, warehouse]);
 
   // 获取状态标签
   const getStatusTag = (status) => {
@@ -106,6 +113,10 @@ const SkuDetail = () => {
               <div className="info-row">
                 <span className="info-label">ShopSku:</span>
                 <span className="info-value">{skuInfo.shopSku}</span>
+              </div>
+              <div className="info-row">
+                <span className="info-label">SellerSku:</span>
+                <span className="info-value">{skuInfo.sellerSku}</span>
               </div>
               <div className="info-row">
                 <span className="info-label">品牌:</span>

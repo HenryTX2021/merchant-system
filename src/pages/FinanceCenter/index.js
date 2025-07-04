@@ -530,7 +530,7 @@ const FinanceCenter = () => {
                 <span className="detail-value">{selectedConsumption.arlTrackingNumber}</span>
               </div>
               <div className="detail-item">
-                <span className="detail-label">Daraz订单号/电商订单号:</span>
+                <span className="detail-label">关联单号:</span>
                 <span className="detail-value">{selectedConsumption.darazOrderId}</span>
               </div>
               <div className="detail-item">

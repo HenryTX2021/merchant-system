@@ -479,8 +479,8 @@ const InventoryQuery = () => {
 
   // 处理库存变动记录点击查看Item明细
   const handleChangeRecordClick = (record) => {
-    // 跳转到Item明细页面，传递相关参数
-    history.push(`/merchant/inventory-query/item-detail/${encodeURIComponent(record.shopSku)}?sellerSku=${encodeURIComponent(record.sellerSku)}&warehouse=${encodeURIComponent(record.warehouse)}`);
+    // 跳转到SKU明细页面，传递相关参数
+    history.push(`/merchant/inventory-query/sku-detail/${encodeURIComponent(record.shopSku)}?sellerSku=${encodeURIComponent(record.sellerSku)}&warehouse=${encodeURIComponent(record.warehouse)}`);
   };
 
   // 处理图片点击

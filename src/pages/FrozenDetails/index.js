@@ -61,7 +61,7 @@ const FrozenDetails = () => {
       '冻结时间': record.frozenTime,
       '流水号': record.transactionId,
       'ARL运单号': record.arlTrackingNumber,
-      'Daraz订单号/电商订单号': record.darazOrderId,
+      '关联单号': record.darazOrderId,
       '发货地': record.shippingFrom
     }));
 
@@ -151,7 +151,7 @@ const FrozenDetails = () => {
                 <span className="detail-value">{selectedRecord.arlTrackingNumber}</span>
               </div>
               <div className="detail-item">
-                <span className="detail-label">Daraz订单号/电商订单号:</span>
+                <span className="detail-label">关联单号:</span>
                 <span className="detail-value">{selectedRecord.darazOrderId}</span>
               </div>
               <div className="detail-item">

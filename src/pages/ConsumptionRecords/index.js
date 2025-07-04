@@ -17,7 +17,7 @@ const ConsumptionRecords = () => {
     const exportData = filteredRecords.map(record => ({
       '扣费流水号': record.transactionId,
       'ARL运单号': record.arlTrackingNumber,
-      'Daraz订单号/电商订单号': record.darazOrderId,
+      '关联单号': record.darazOrderId,
       '费用名称': record.feeName,
       '费用金额': record.amount.toFixed(2) + ' 元',
       '扣费时间': record.time,
@@ -420,7 +420,7 @@ const ConsumptionRecords = () => {
                 <span className="detail-value">{selectedConsumption.arlTrackingNumber}</span>
               </div>
               <div className="detail-item">
-                <span className="detail-label">Daraz订单号/电商订单号:</span>
+                <span className="detail-label">关联单号:</span>
                 <span className="detail-value">{selectedConsumption.darazOrderId}</span>
               </div>
               <div className="detail-item">
